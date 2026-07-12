@@ -5,6 +5,7 @@ export interface Project {
   subtitle: string;
   description: string;
   image: string;
+  video?: string;
   technologies: string[];
   github: string;
   live?: string;
@@ -102,8 +103,8 @@ export const projects: Project[] = [
     subtitle: "Classic Puzzle Game with Modern UI",
     description:
       "A browser-based implementation of the classic Tetris game featuring smooth gameplay, responsive keyboard controls, score tracking, level progression, collision detection, line clearing logic, and game-over state management.",
-
-    image: "./../tetris01.mp4",
+      image : "./../tetris.png",
+    video: "./../tetris01.mp4",
 
     technologies: [
       "React",

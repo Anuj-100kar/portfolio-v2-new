@@ -17,11 +17,23 @@ export default function ProjectCard({ project }: Props) {
       whileHover={{ y: -8 }}
       className="w-[360px] flex-shrink-0 bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden"
     >
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-52 object-cover"
-      />
+      {project.video ? (
+        <video
+          src={project.video}
+          controls
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+        />
+      ) : (
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-full object-cover"
+        />
+      )}
 
       <div className="p-6">
         <h3 className="text-2xl font-bold">{project.title}</h3>
