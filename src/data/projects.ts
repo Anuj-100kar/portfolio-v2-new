@@ -103,7 +103,7 @@ export const projects: Project[] = [
     description:
       "A browser-based implementation of the classic Tetris game featuring smooth gameplay, responsive keyboard controls, score tracking, level progression, collision detection, line clearing logic, and game-over state management.",
 
-    image: "./../tetris.png",
+    image: "./../tetris01.mp4",
 
     technologies: [
       "React",
