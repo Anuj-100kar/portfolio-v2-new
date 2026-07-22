@@ -13,19 +13,6 @@ export default function ProjectCarousel() {
     (project) => !project.featured
   );
 
-  const scrollLeft = () => {
-    scrollRef.current?.scrollBy({
-      left: -380,
-      behavior: "smooth",
-    });
-  };
-
-  const scrollRight = () => {
-    scrollRef.current?.scrollBy({
-      left: 380,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <div className="mt-24">
@@ -36,58 +23,18 @@ export default function ProjectCarousel() {
           Other Projects
         </h2>
 
-        <div className="flex gap-3">
 
-          <button
-            onClick={scrollLeft}
-            className="
-            w-12
-            h-12
-            rounded-full
-            border
-            border-zinc-700
-            hover:border-blue-500
-            transition
-            flex
-            items-center
-            justify-center
-            "
-          >
-            <ChevronLeft />
-          </button>
-
-          <button
-            onClick={scrollRight}
-            className="
-            w-12
-            h-12
-            rounded-full
-            border
-            border-zinc-700
-            hover:border-blue-500
-            transition
-            flex
-            items-center
-            justify-center
-            "
-          >
-            <ChevronRight />
-          </button>
-
-        </div>
 
       </div>
 
       <div
-        ref={scrollRef}
         className="
-        flex
-        gap-8
-        overflow-x-auto
-        scroll-smooth
-        hide-scrollbar
-        pb-4
-        "
+    grid
+    grid-cols-1
+    md:grid-cols-2
+    xl:grid-cols-3
+    gap-8
+  "
       >
         {otherProjects.map((project) => (
           <ProjectCard

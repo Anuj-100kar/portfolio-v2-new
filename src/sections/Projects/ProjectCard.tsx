@@ -15,7 +15,14 @@ export default function ProjectCard({ project }: Props) {
     <motion.div
       onClick={() => navigate(`/projects/${project.slug}`)}
       whileHover={{ y: -8 }}
-      className="w-[360px] flex-shrink-0 bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden"
+      className="
+w-full
+bg-zinc-900
+border
+border-zinc-800
+rounded-2xl
+overflow-hidden
+"
     >
       {project.video ? (
         <video
@@ -25,13 +32,13 @@ export default function ProjectCard({ project }: Props) {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-56 object-cover"
         />
       ) : (
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover"
+          className="w-full h-56 object-cover"
         />
       )}
 
