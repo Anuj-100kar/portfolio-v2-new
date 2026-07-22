@@ -1,11 +1,9 @@
 import { useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { projects } from "../../data/projects";
 import ProjectCard from "./ProjectCard";
 
 export default function ProjectCarousel() {
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   console.log(projects);
 
