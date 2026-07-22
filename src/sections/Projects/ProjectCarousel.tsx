@@ -7,6 +7,8 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  console.log(projects);
+
   const otherProjects = projects.filter(
     (project) => !project.featured
   );

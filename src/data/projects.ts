@@ -120,5 +120,22 @@ export const projects: Project[] = [
     // live: "https://tetris-game.vercel.app",
 
     featured: false
-  }
+  },
+  {
+  id: 5,
+  slug: "chat-app",
+  title: "Real-time chat application",
+  subtitle: "Do chat daily .....",
+  description:
+    "the application allow different users to chat with others by connecting with them...",
+  image: "./../chatapp.png",
+  technologies: [
+    "React",
+    "Node.js",
+    "MongoDB",
+    "Express"
+  ],
+  github: "https://github.com/Anuj-100kar/realtime-chat-app",
+  featured: false
+}
 ];
